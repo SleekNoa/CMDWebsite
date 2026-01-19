@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voice Terminal Emulator</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id="terminal-container">
+    <div id="terminal-header">
+      <span>VOICE TERMINAL v2.0</span>
+      <div id="status">
+        <span class="status-dot"></span>
+        <span id="status-text">READY</span>
+      </div>
+    </div>
+    <div id="terminal">
+      <div id="output"></div>
+      <div id="input-line">
+        <span id="prompt">user@vterm:~$</span>
+        <input type="text" id="command-input" autofocus>
+        <div id="controls">
+          <button class="btn" id="voice-btn" title="Voice Input">🎤</button>
+          <button class="btn" id="speak-btn" title="Toggle Speech">🔊</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/terminal.js"></script>
+</body>
+</html>
